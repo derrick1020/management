@@ -1,0 +1,28 @@
+{
+  "name": "management",
+  "version": "1.0.0",
+  "description": "employee-management",
+  "main": "app.js",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "fs": "0.0.1-security",
+    "inquirer": "^8.1.2",
+    "mysql": "^2.18.1",
+    "package-json": "^7.0.0",
+    "package-json-io": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derrick1020/management.git"
+  },
+  "author": "derrick-helgeson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derrick1020/management/issues"
+  },
+  "homepage": "https://github.com/derrick1020/management#readme"
+}

@@ -1,15 +1,31 @@
-INSERT INTO department (dept_name) VALUES ('Back of House'), ('Front of House'), ('Management');
-INSERT INTO company_role (title, salary, dept_id) VALUES
-('General Manager', 80000.00, 3), 
-('Head Chef', 60000.00, 1),
-('Sous Chef', 30000.00, 1),
-('Cook', 30000.00, 1 ),
-('Dishwasher', 20000.00, 1),                
-('Front of House Manager', 40000.00, 2),
-('Host', 30000.00, 2),
-('Server', 20000.00, 1);
+Use company_db;
 
-INSERT INTO employees (first_name, last_name, emp_role_id, manager_id) VALUES
-('Mark', 'Danzino', 1, null),
-('Abigail', 'Jenner', 6, 1),
-('Derek', 'Fisher', 2, null);
+
+INSERT INTO department (dept_name)
+VALUES
+    ('Sales'),
+    ('Software'),
+    ('Finance'),
+    ('Legal');
+
+INSERT INTO role (title, salary, dept_id)
+VALUES
+    ('Sales Mgr', 100000, 1),
+    ('Sales Rep', 80000, 1),
+    ('Legal Project Manager', 250000, 4),
+    ('Lawyer', 190000, 4),
+    ('Junior Software Dev', 120000, 2),
+    ('Senior Software Dev', 150000, 2),
+    ('Account Manager', 160000, 3),
+    ('Payroll', 125000, 3);
+
+INSERT INTO employee (first_name, last_name, role_id, mgr_id)
+VALUES
+    ('Sara', 'Luz', 7, NULL),
+    ('Babineau', 'Oma', 1, NULL),
+    ('Kevin', 'Chipper', 4, 3),
+    ('bob', 'Russ', 3, NULL),
+    ('Jackie', 'Jacks', 2, 1),
+    ('Paul', 'Kanz', 6, 5),
+    ('Mortal', 'Kombat', 8, 7),
+    ('Jay', 'Sidney', 5, NULL);
